@@ -1,0 +1,38 @@
+h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    background-color: black;
+}
+pre {
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.image {
+    margin-left: 26%;
+}
+img {
+    height: 180px;
+    width: 180px;
+}
+div{
+    color: #fff;
+}
+span{
+    color: blue;
+}
+.footer{
+    text-align: center;
+}
+.footer .icons a{
+ font-size: 1.8rem;
+ margin: 0 .7rem;
+ padding-top: .8rem;
+}
+.footer .icons a:hover{
+ cursor: pointer;
+ color: palevioletred;
+}

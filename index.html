@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="index1.css">
+  <link rel="stylesheet" href="result.css">
+  <link rel="shortcut icon" href="cricketicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <title>T20 CricInfo</title>
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <img src="ball.jpeg" alt="image not found" id="logo">
+    <ul class="navv">
+      <li><a href="index.html" class="current">Home</a></li>
+      <li><a href="player.html" class="current">Players</a></li>
+      <li><a href="#Tool">Comparison Tool</a></li>
+      <li><a href="about.html">About us</a></li>
+
+    </ul>
+  </nav>
+
+  <section class="mainbody">
+    <h1>hello</h1>
+  </section>
+  <br>
+  <br>
+  <main>
+    <section>
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="2" class="t1">
+              <span class="Spacer2"><br>&nbsp;</span>
+              Player Records
+
+            </td>
+
+        </tbody>
+      </table>
+      <form>
+        <div>
+          <table cellpadding="0" cellspacing="0" width="1000">
+            <tbody>
+              <tr>
+                <td valign="top">
+                  <div>
+                    <ul class="dataa">
+                      <li class="selected"><a href="#">Find Players</a></li>
+
+
+                      <li class="#"><a href="T20.html">T20I</a></li>
+
+
+                    </ul>
+                    <div class="panel-container">
+                      <div id="find_player">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td valign="top">
+                                <!-- Find Player - Column 1 -->
+                                <table width="400" cellpadding="4" cellspacing="0" border="0">
+                                  <tbody>
+                                    <tr>
+                                      <td class="TextBlack9" valign="top">
+                                        Select a player from one
+                                        of the following lists,
+                                        or enter name in the
+                                        Find Player box to view
+                                        his profile:
+                                      </td>
+                                    </tr>
+
+                                    <br>
+                                    <tr>
+                                      <td class="TextBlack9">
+                                        <br>
+                                        <div class="TextBlack9">
+                                          Alphabetical Lists :-
+                                        </div>
+                                        <br>
+                                        <a href="/alphabet/A.html" class="abclist">A</a>
+                                        <a href="/alphabet/B.html" class="abclist">B</a>
+                                        <a href="/alphabet/C.html" class="abclist">C</a>
+                                        <a href="/alphabet/D.html" class="abclist">D</a>
+                                        <a href="/alphabet/E.html" class="abclist">E</a>
+                                        <a href="/alphabet/F.html" class="abclist">F</a>
+                                        <a href="/alphabet/G.html" class="abclist">G</a>
+                                        <a href="/alphabet/H.html" class="abclist">H</a>
+                                        <a href="/alphabet/I.html" class="abclist">I</a>
+                                        <a href="/alphabet/J.html" class="abclist">J</a>
+                                        <a href="/alphabet/K.html" class="abclist">K</a>
+                                        <a href="/alphabet/L.html" class="abclist">L</a>
+                                        <a href="/alphabet/M.html" class="abclist">M</a>
+                                        <br>
+                                        <a href="/alphabet/N.html" class="abclist">N</a>
+                                        <a href="/alphabet/O.html" class="abclist">O</a>
+                                        <a href="/alphabet/P.html" class="abclist">P</a>
+                                        <a href="/alphabet/Q.html" class="abclist">Q</a>
+                                        <a href="/alphabet/R.html" class="abclist">R</a>
+                                        <a href="/alphabet/S.html" class="abclist">S</a>
+                                        <a href="/alphabet/T.html" class="abclist">T</a>
+                                        <a href="/alphabet/U.html" class="abclist">U</a>
+                                        <a href="/alphabet/V.html" class="abclist">V</a>
+                                        <a href="/alphabet/W.html" class="abclist">W</a>
+                                        <a href="/alphabet/X.html" class="abclist">X</a>
+                                        <a href="/alphabet/Y.html" class="abclist">Y</a>
+                                        <a href="/alphabet/Z.html" class="abclist">Z</a>
+
+                                      </td>
+                                    </tr>
+                                    <tr>
+
+                                      <td class="TextBlack9">
+                                        <br>
+                                        Click a letter to list
+                                        players whose name
+                                        start with the selected
+                                        letter.
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td class="Spacer2">
+                                        &nbsp;
+                                      </td>
+                                    </tr>
+
+
+                                  </tbody>
+                                </table>
+                              </td>
+                              <td width="50">&nbsp;</td>
+                              <td valign="top">
+                                <br>
+                                <div class="search-input">
+                                  <table width="100%" cellpadding="4" cellspacing="0">
+                                    <tbody>
+                                      <div>
+                                        <tr>
+                                          <td>
+                                            <div class="auto">
+                                              <label for="search-input1">Search for : </label>
+                                              <input type="text" id="searchInput" placeholder="Search..">
+                                              <button type="button" onclick="searchArray()">Search</button>
+                                              <ul id="autos"></ul>
+                                              <br>&nbsp;&nbsp;&nbsp;
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </div>
+                                      <tr>
+                                        <td class="Spacer2">
+                                          &nbsp;
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="Spacer2">
+                                          &nbsp;
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="Spacer2">
+                                          &nbsp;
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td class="TextBlack9">Enter the full name of the player. Keep first letter of
+                                          firstname and lastname capital. After entering full name click on the search
+                                          button</td>
+                                      </tr>
+
+
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </form>
+
+
+
+    </section>
+  </main>
+  <br>
+  <br>
+  <h3>Search Result: </h3>
+  <div class="Result">
+    <table id="data_output" class="resultT">
+
+    </table>
+    <table id="Bowldata_output" class="resultT">
+
+    </table>
+  </div>
+  <br>
+  <br>
+  <h3 id="Tool">Comparison Tool</h3>
+  <section>
+
+    <form>
+      <div>
+        <table border="0" cellpadding="0" cellspacing="0" width="1000">
+          <tbody>
+            <tr>
+              <td valign="top">
+
+                <div class="panel-container">
+                  <div id="find_player">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td valign="top">
+                            <!-- Find Player - Column 1 -->
+                            <table width="400" cellpadding="4" cellspacing="0" border="0">
+                              <tbody>
+
+                                <tr>
+                                  <td>
+                                    <div class="autocomplete">
+                                      <label for="search-input">Player 1:</label>
+                                      <input type="text" id="searchInput1" placeholder="Search">
+                                      <ul id="autocomplete-results"></ul>
+                                      <button type="button" onclick="searchData()">Search</button>
+
+                                      <br>&nbsp;&nbsp;&nbsp;
+                                <tr id="Player1_result">
+                                </tr>
+                              
+                                    </div>
+                  </div>
+
+
+              </td>
+
+            </tr>
+
+          </tbody>
+        </table>
+        </td>
+        <td>
+          <div>
+            <table class="in">
+              <tbody id="Compare">
+
+
+
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <table class="inn">
+              <tbody id="Compare2">
+
+
+              </tbody>
+            </table>
+          </div>
+        </td>
+        <td width="0">&nbsp;</td>
+        <td valign="top">
+
+          <div>
+            <table width="100%" cellpadding="4" cellspacing="0" border="0">
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="autocompletee">
+                      <label for="search-input2">Player 2:</label>
+                      <input type="text" id="searchInput2" placeholder="Search..">
+                      <button type="button" onclick="searchData()">Search</button>
+                      <ul id="autocompletee-results"></ul>
+                      <br>&nbsp;&nbsp;&nbsp;
+
+                  </td>
+                </tr>
+                <tr id="Player2_result">
+
+                </tr>
+
+
+              </tbody>
+            </table>
+          </div>
+        </td>
+        </tr>
+        <tr id="compare_result">
+
+        </tr>
+        </tbody>
+        </table>
+      </div>
+      </div>
+      </div>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+
+      </div>
+    </form>
+
+
+
+  </section>
+  <br>
+  <br>
+</section>
+<section class="footer">
+    <div class="credit">created by | <span>Krish Web Designer</span> | All rights are reserved</div>
+     <div class="icons">
+    
+        <a href="https://www.facebook.com/groups/?ref=bookmarks" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" class="fab fa-twitter"></a>
+        <a href="https://instagram.com/_krishna_gund?igshid=MzRlODBiNWFlZA==" class="fab fa-instagram"></a>
+        <a href="https://web.whatsapp.com/" class="fab fa-whatsapp"></a>
+        <a href="https://github.com/krishnagund" class="fab fa-github"></a>
+    </div>
+    </section>
+
+
+  <script>
+
+
+
+    function searchArray() {
+      const searchInput = document.getElementById('searchInput').value;
+      fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+          const index = data.myData.findIndex(myData => myData.Name === searchInput);
+          if (index !== -1) {
+            alert('Player found at index ' + index);
+            var table = document.getElementById('data_output')
+            var row = `
+        <table >
+        <thead>
+            <th colspan="2">Batting statistics</th>
+        </thead>
+    </table>
+                   <table> <thead>
+                    <th>Player ID</th>
+                    <th class="name">Name</th>
+                    <th>Age</th>
+                    <th>Role</th>
+                    <th>Matches</th>
+                    <th>Bat innings</th>
+                    <th>Runs</th>
+                    <th>HS</th>
+                    <th>AVG</th>
+                    <th>Strike rate</th>
+                    <th>6's</th>
+                    <th>4's</th>
+                    <th>100's</th>
+                    <th>50's</th>
+                    <th>Batting Style</th> 
+                </thead>
+        <tbody><tr>
+                    <td>${data.myData[index].Player_id}</td>
+                <td>${data.myData[index].Name}</td>
+                <td>${data.myData[index].age}</td>
+                <td>${data.myData[index].type}</td>
+                <td>${data.myData[index].matches}</td>
+                
+                <td>${data.myData[index].bat_innings}</td>
+                <td>${data.myData[index].runs}</td>
+                <td>${data.myData[index].HS}</td>
+                <td>${data.myData[index].avg}</td>
+                
+                <td>${data.myData[index].strike_rate}</td>
+                <td>${data.myData[index].six}</td>
+                <td>${data.myData[index].four}</td>
+                <td>${data.myData[index].hundreds}</td>
+                <td>${data.myData[index].fifty}</td>
+                <td>${data.myData[index].bat_style}</td>
+                
+                
+                          </tr></tbody></table>
+                       
+                 
+                   
+                
+               `
+            table.innerHTML = row
+            var table4 = document.getElementById('Bowldata_output')
+            var row4 = `
+       <table class="node">
+        <thead>
+            <th>Bowling statistics</th>
+        </thead>
+    </table>
+        
+        <table>
+                    <thead>
+                        
+                        <th>Innings</th>
+                  <th>wickets</td> </th>
+                  
+                  <th>Balls</td></th>
+                  <th>Runs</td> </th>
+                  
+                  <th>econ</td> </th>
+                  <th>hattrick</td> </th>
+                  <th>Strike rate</td> </th>
+                  <th>AVG</td> </th>
+                  <th>Bowl Style</td> </th>
+                  </thead>
+                    <tbody>
+                        <tr>
+                            <td>${data.myData[index].bowl_innings}</td>
+                            <td>${data.myData[index].wickets}</td>
+                            <td>${data.myData[index].Ball_bowled}</td>
+                            <td>${data.myData[index].runs_given}</td>
+                            <td>${data.myData[index].econ}</td>
+                            <td>${data.myData[index].hattricks}</td>
+                            <td>${data.myData[index].bowl_strate}</td>
+                            <td>${data.myData[index].bowl_avg}</td>
+                            <td>${data.myData[index].bowl_style}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                 
+                    `
+
+            table4.innerHTML = row4
+
+          } else {
+            alert('Player not found in JSON data');
+          }
+
+        })
+        .catch(error => {
+          alert('Error retrieving JSON data: ' + error.message);
+        });
+    }
+    function searchData() {
+      const searchInput1 = document.getElementById('searchInput1').value;
+      const searchInput2 = document.getElementById('searchInput2').value;
+      fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+          const index1 = data.myData.findIndex(myData => myData.Name === searchInput1);
+          const index2 = data.myData.findIndex(myData => myData.Name === searchInput2);
+          if (index1 !== -1) {
+            alert('Player found at index ' + index1);
+            let table = document.getElementById('Player1_result')
+            let row = `
+       
+            <td>
+            <img src="${data.myData[index1].pfp}" alt="Image not found" height="50px" width="50px" class="imagee"><br>
+            <p><b>Name : </b>${data.myData[index1].Name}</p>
+            <p><b>Age : </b>${data.myData[index1].age}   </p>
+            <table class="resultTT" id="c1">
+              
+                    
+                    <tbody>
+                            <tr> <td>${data.myData[index1].matches}</td></tr>
+                            <tr><td>${data.myData[index1].bat_innings}</td></tr>
+                            <tr>  <td>${data.myData[index1].runs}</td></tr>
+                            <tr> <td>${data.myData[index1].HS}</td></tr>
+                            <tr> <td id="c1_1">${data.myData[index1].avg}</td></tr>
+                            <tr><td id="c1_2">${data.myData[index1].strike_rate}</td></tr>
+                            <tr> <td>${data.myData[index1].six}</td></tr>
+                            <tr> <td>${data.myData[index1].four}</td></tr>
+                            <tr> <td>${data.myData[index1].hundreds}</td></tr>
+                            <tr> <td>${data.myData[index1].fifty}</td></tr>
+                            <tr><td>${data.myData[index1].bat_style}</td></tr>
+                
+
+                    </tbody>
+            </table>
+           
+            <table class="resultTT">
+                <tbody>
+                    <tr> <td>${data.myData[index1].bowl_innings}</td></tr>
+                    <tr><td id="c1_3">${data.myData[index1].wickets}</td></tr>
+                    <tr>  <td>${data.myData[index1].Ball_bowled}</td></tr>
+                    <tr> <td>${data.myData[index1].runs_given}</td></tr>
+                    
+                    <tr> <td id="c1_4">${data.myData[index1].econ}</td></tr>
+                    <tr> <td>${data.myData[index1].hattricks}</td></tr>
+                    <tr> <td>${data.myData[index1].bowl_strate}</td></tr>
+                    <tr> <td>${data.myData[index1].bowl_avg}</td></tr>
+                    <tr> <td>${data.myData[index1].bowl_style}</td></tr>
+                </tbody>
+            
+            </td>`
+            table.innerHTML = row
+            var table1 = document.getElementById('Compare')
+            var row1 = `<table>
+            <tbody>                       
+                <td class="hii">Bat Stats</td>         
+                  <tr>  <td class="resultTTT">Matches</td> </tr>
+                  <tr>  <td class="resultTTT">Innings</td> </tr>
+                  <tr>  <td class="resultTTT">Runs</td> </tr>
+                  <tr>  <td class="resultTTT">HS</td> </tr>
+                  <tr>  <td class="resultTTT">AVG</td> </tr>
+                  <tr>  <td class="resultTTT">Strike Rate</td> </tr>
+                  <tr>  <td class="resultTTT">6's</td> </tr>
+                  <tr>  <td class="resultTTT">4's</td> </tr>
+                  <tr>  <td class="resultTTT">100's</td> </tr>
+                  <tr>  <td class="resultTTT">50's</td> </tr>
+                  <tr>  <td class="resultTTT">Bat Style</td> </tr>
+                  
+            </tbody>
+        </table>
+        `
+            table1.innerHTML = row1
+            var table3 = document.getElementById('Compare2')
+            var row3 = `
+                         <br>         
+                <td class="hii">Bowl Stats</td>         
+                  <tr>  <td class="resultTTT">Innings</td> </tr>
+                  <tr>  <td class="resultTTT">wickets</td> </tr>
+                  
+                  <tr> <td class="resultTTT">Balls</td></tr>
+                  <tr>  <td class="resultTTT">Runs</td> </tr>
+                  
+                  <tr>  <td class="resultTTT">econ</td> </tr>
+                  <tr>  <td class="resultTTT">hattrick</td> </tr>
+                  <tr>  <td class="resultTTT">Strike rate</td> </tr>
+                  <tr>  <td class="resultTTT">AVG</td> </tr>
+                  <tr>  <td class="resultTTT">Bowl Style</td> </tr>
+                  
+                  
+           
+        `
+            table3.innerHTML = row3
+          } else {
+            alert('Player not found in JSON data');
+          }
+
+
+
+
+
+          if (index2 !== -1) {
+            alert('Player2 found at index ' + index2);
+            let table2 = document.getElementById('Player2_result')
+            let row2 = `
+       
+       <td>
+       <img src="${data.myData[index2].pfp}" alt="Image not found" height="50px" width="50px" class="imagee"><br>
+       <p><b>Name : </b>${data.myData[index2].Name}</p>
+       <p><b>Age : </b>${data.myData[index2].age}</p>
+       <table class="resultTT" id="c2">
+         
+               
+               <tbody>
+                   
+               
+           
+           
+                        <tr> <td>${data.myData[index2].matches}</td></tr>
+                        <tr><td>${data.myData[index2].bat_innings}</td></tr>
+                        <tr>  <td>${data.myData[index2].runs}</td></tr>
+                        <tr> <td>${data.myData[index2].HS}</td></tr>
+                        <tr> <td id="c2_1">${data.myData[index2].avg}</td></tr>
+                        <tr><td id="c2_2">${data.myData[index2].strike_rate}</td></tr>
+                        <tr> <td>${data.myData[index2].six}</td></tr>
+                        <tr> <td>${data.myData[index2].four}</td></tr>
+                        <tr> <td>${data.myData[index2].hundreds}</td></tr>
+                        <tr> <td>${data.myData[index2].fifty}</td></tr>
+                        <tr><td>${data.myData[index2].bat_style}</td></tr>
+           
+
+               </tbody>
+       </table>
+       <table class="resultTT">
+                <tbody>
+                    <tr> <td>${data.myData[index2].bowl_innings}</td></tr>
+                    <tr><td id="c2_3">${data.myData[index2].wickets}</td></tr>
+                    <tr>  <td>${data.myData[index2].Ball_bowled}</td></tr>
+                    <tr> <td>${data.myData[index2].runs_given}</td></tr>
+                    
+                    <tr> <td id="c2_4">${data.myData[index2].econ}</td></tr>
+                    <tr> <td>${data.myData[index2].hattricks}</td></tr>
+                    <tr> <td>${data.myData[index2].bowl_strate}</td></tr>
+                    <tr> <td>${data.myData[index2].bowl_avg}</td></tr>
+                    <tr> <td>${data.myData[index2].bowl_style}</td></tr>
+                </tbody>
+       
+       </td>`
+            table2.innerHTML = row2
+          } else {
+            alert('Player not found in JSON data');
+          }
+
+
+
+          if (data.myData[index1].type == 'batter' && data.myData[index2].type == 'batter') {
+            var c1 = document.getElementById("c1_1")
+            var c2 = document.getElementById("c2_1")
+            if (data.myData[index1].avg > data.myData[index2].avg) {
+              c1.style.backgroundColor = "yellow"
+            }
+            else if (data.myData[index1].avg < data.myData[index2].avg) {
+              c2.style.backgroundColor = "yellow"
+            }
+            else {
+              c1.style.backgroundColor = "yellow"
+              c2.style.backgroundColor = "yellow"
+            }
+            var d1 = document.getElementById("c1_2")
+            var d2 = document.getElementById("c2_2")
+            if (data.myData[index1].strike_rate > data.myData[index2].strike_rate) {
+              d1.style.backgroundColor = "yellow"
+            }
+            else if (data.myData[index1].strike_rate < data.myData[index2].strike_rate) {
+              d2.style.backgroundColor = "yellow"
+            }
+            else {
+              d1.style.backgroundColor = "yellow"
+              d2.style.backgroundColor = "yellow"
+            }
+          }
+          else if (data.myData[index1].type == 'bowler' && data.myData[index2].type == 'bowler') {
+            var c1 = document.getElementById("c1_3")
+            var c2 = document.getElementById("c2_3")
+            if (data.myData[index1].wickets > data.myData[index2].wickets) {
+              c1.style.backgroundColor = "yellow"
+            }
+            else if (data.myData[index1].wickets < data.myData[index2].wickets) {
+              c2.style.backgroundColor = "yellow"
+            }
+            else {
+              c1.style.backgroundColor = "yellow"
+              c2.style.backgroundColor = "yellow"
+            }
+            var d1 = document.getElementById("c1_4")
+            var d2 = document.getElementById("c2_4")
+            if (data.myData[index1].econ < data.myData[index2].econ) {
+              d1.style.backgroundColor = "yellow"
+            }
+            else if (data.myData[index1].econ > data.myData[index2].econ) {
+              d2.style.backgroundColor = "yellow"
+            }
+            else {
+              d1.style.backgroundColor = "yellow"
+              d2.style.backgroundColor = "yellow"
+            }
+          }
+          else if (data.myData[index1].type == 'all rounder' && data.myData[index2].type == 'all rounder') {
+            var c1 = document.getElementById("c1_1")
+            var c2 = document.getElementById("c2_1")
+            if (data.myData[index1].avg > data.myData[index2].avg) {
+              c1.style.backgroundColor = "yellow"
+            }
+            else if (data.myData[index1].avg < data.myData[index2].avg) {
+              c2.style.backgroundColor = "yellow"
+            }
+            else {
+              c1.style.backgroundColor = "yellow"
+              c2.style.backgroundColor = "yellow"
+            }
+            var d1 = document.getElementById("c1_2")
+            var d2 = document.getElementById("c2_2")
+            if (data.myData[index1].strike_rate > data.myData[index2].strike_rate) {
+              d1.style.backgroundColor = "yellow"
+            }
+            else if (data.myData[index1].strike_rate < data.myData[index2].strike_rate) {
+              d2.style.backgroundColor = "yellow"
+            }
+            else {
+              d1.style.backgroundColor = "yellow"
+              d2.style.backgroundColor = "yellow"
+            }
+            var c1 = document.getElementById("c1_3")
+            var c2 = document.getElementById("c2_3")
+            if (data.myData[index1].wickets > data.myData[index2].wickets) {
+              c1.style.backgroundColor = "yellow"
+            }
+            else if (data.myData[index1].wickets < data.myData[index2].wickets) {
+              c2.style.backgroundColor = "yellow"
+            }
+            else {
+              c1.style.backgroundColor = "yellow"
+              c2.style.backgroundColor = "yellow"
+            }
+            var d1 = document.getElementById("c1_4")
+            var d2 = document.getElementById("c2_4")
+            if (data.myData[index1].econ < data.myData[index2].econ) {
+              d1.style.backgroundColor = "yellow"
+            }
+            else if (data.myData[index1].econ > data.myData[index2].econ) {
+              d2.style.backgroundColor = "yellow"
+            }
+            else {
+              d1.style.backgroundColor = "yellow"
+              d2.style.backgroundColor = "yellow"
+            }
+          }
+          else {
+            alert("Invalid Comparison!! Try Again!!")
+          }
+        }
+        ).catch(error => {
+          alert('Error retrieving JSON data: ' + error.message);
+        });
+    }
+    const searchInput = document.getElementById('searchInput1');
+    const resultsList = document.getElementById('autocomplete-results');
+
+    searchInput1.addEventListener('input', function () {
+      // clear previous results
+      resultsList.innerHTML = '';
+
+      // get search term
+      const searchTerm = this.value.trim();
+
+      // get search results
+      const results = getSearchResults(searchTerm);
+
+      // show results
+      results.forEach(function (result) {
+        const li = document.createElement('li');
+        li.innerText = result;
+        li.addEventListener('click', function () {
+          searchInput1.value = result;
+          resultsList.innerHTML = '';
+        });
+        resultsList.appendChild(li);
+      });
+    });
+
+    function getSearchResults(searchTerm) {
+      // replace this with your own search function
+      const results = ['Rohit Sharma', 'Virat Kohli', 'MS Dhoni', 'Shikhar Dhawan', 'KL Rahul', 'Suryakumar Yadav', 'Dinesh Kartik', 'Suresh Raina', 'Shreyas Iyer', 'Rishabh Pant', 'Virendra Sehwag', 'Ajinkya Rahane', 'Sanju Samson', 'Gautam Gambhir', 'Manish Pandey', 'Akshar Patel', 'Robin Uthappa', 'Shubhaman Gill', 'Ruturaj Gaikwad', 'Kedar Jadhav', 'Rahul Tripathi', 'Ashish Nehra', 'Jasprit Bumrah', 'Mohammed Shami', 'Bhuvneshwar Kumar', 'Amit Mishra', 'Vinay Kumar', 'Pragyan Ojha', 'Ishant Sharma', 'Praveen Kumar', 'S Sreesanth', 'Ajit Agarkar', 'Harbhajan Singh', 'Zaheer Khan', 'Chetan Sakariya', 'Deepak Hooda', 'Varun Chakravarthy', 'Lakshmipathy Balaji', 'Ishan Kishan', 'Murali Kartik', 'Harshal Patel', 'Sandeep Warrier', 'Mayank Markande', 'Khaleel Ahmed', 'Devdutt Padikal', 'T Natarajan', 'Hardik Pandya', 'Krunal Pandya', 'Stuart Binny', 'Umesh Yadav'];
+      return results.filter(function (result) {
+        return result.toLowerCase().startsWith(searchTerm.toLowerCase());
+      });
+    }
+    const searchInputs = document.getElementById('searchInput2');
+    const resultsLists = document.getElementById('autocompletee-results');
+
+    searchInput2.addEventListener('input', function () {
+      // clear previous results
+      resultsLists.innerHTML = '';
+
+      // get search term
+      const searchTerms = this.value.trim();
+
+      // get search results
+      const results = getSearchResults(searchTerms);
+
+      // show results
+      results.forEach(function (result) {
+        const li = document.createElement('li');
+        li.innerText = result;
+        li.addEventListener('click', function () {
+          searchInput2.value = result;
+          resultsLists.innerHTML = '';
+        });
+        resultsLists.appendChild(li);
+      });
+    });
+
+    function getSearchResults(searchTerm) {
+      
+      const results = ['Rohit Sharma', 'Virat Kohli', 'MS Dhoni', 'Shikhar Dhawan', 'KL Rahul', 'Suryakumar Yadav', 'Dinesh Kartik', 'Suresh Raina', 'Shreyas Iyer', 'Rishabh Pant', 'Virendra Sehwag', 'Ajinkya Rahane', 'Sanju Samson', 'Gautam Gambhir', 'Manish Pandey', 'Akshar Patel', 'Robin Uthappa', 'Shubhaman Gill', 'Ruturaj Gaikwad', 'Kedar Jadhav', 'Rahul Tripathi', 'Ashish Nehra', 'Jasprit Bumrah', 'Mohammed Shami', 'Bhuvneshwar Kumar', 'Amit Mishra', 'Vinay Kumar', 'Pragyan Ojha', 'Ishant Sharma', 'Praveen Kumar', 'S Sreesanth', 'Ajit Agarkar', 'Harbhajan Singh', 'Zaheer Khan', 'Chetan Sakariya', 'Deepak Hooda', 'Varun Chakravarthy', 'Lakshmipathy Balaji', 'Ishan Kishan', 'Murali Kartik', 'Harshal Patel', 'Sandeep Warrier', 'Mayank Markande', 'Khaleel Ahmed', 'Devdutt Padikal', 'T Natarajan', 'Hardik Pandya', 'Krunal Pandya', 'Stuart Binny', 'Umesh Yadav'];
+      return results.filter(function (result) {
+        return result.toLowerCase().startsWith(searchTerm.toLowerCase());
+      });
+    }
+
+
+    //normal search
+
+    const search = document.getElementById('searchInput');
+    const resultsLi = document.getElementById('autos');
+
+    search.addEventListener('input', function () {
+      // clear previous results
+      resultsLi.innerHTML = '';
+
+      // get search term
+      const searchTermss = this.value.trim();
+
+      // get search results
+      const results = getSearchResults(searchTermss);
+
+      // show results
+      results.forEach(function (result) {
+        const li = document.createElement('li');
+        li.innerText = result;
+        li.addEventListener('click', function () {
+          search.value = result;
+          resultsLists.innerHTML = '';
+        });
+        resultsLi.appendChild(li);
+      });
+    });
+
+    function getSearchResults(searchTerm) {
+      // replace this with your own search function
+      const results = ['Rohit Sharma', 'Virat Kohli', 'MS Dhoni', 'Shikhar Dhawan', 'KL Rahul', 'Suryakumar Yadav', 'Dinesh Karthik', 'Suresh Raina', 'Shreyas Iyer', 'Rishabh Pant', 'Virendra Sehwag', 'Ajinkya Rahane', 'Sanju Samson', 'Gautam Gambhir', 'Manish Pandey', 'Akshar Patel', 'Robin Uthappa', 'Shubhaman Gill', 'Ruturaj Gaikwad', 'Kedar Jadhav', 'Rahul Tripathi', 'Ashish Nehra', 'Jasprit Bumrah', 'Mohammed Shami', 'Bhuvneshwar Kumar', 'Amit Mishra', 'Vinay Kumar', 'Pragyan Ojha', 'Ishant Sharma', 'Praveen Kumar', 'S Sreesanth', 'Ajit Agarkar', 'Harbhajan Singh', 'Zaheer Khan', 'Chetan Sakariya', 'Deepak Hooda', 'Varun Chakravarthy', 'Lakshmipathy Balaji', 'Ishan Kishan', 'Murali Kartik', 'Harshal Patel', 'Sandeep Warrier', 'Mayank Markande', 'Khaleel Ahmed', 'Devdutt Padikal', 'T Natarajan', 'Hardik Pandya', 'Krunal Pandya', 'Stuart Binny', 'Umesh Yadav'];
+      return results.filter(function (result) {
+        return result.toLowerCase().startsWith(searchTerm.toLowerCase());
+      });
+    }
+
+  </script>
+
+</body>
+
+</html>

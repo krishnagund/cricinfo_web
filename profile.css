@@ -1,0 +1,13 @@
+.t1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    left: 0px;
+    padding: 0 3px 0 3px;
+}
+table td {
+    padding: 10px;
+    border: thin solid #d4d4d4;
+    width: 18%;
+    text-align: center;
+    background-color: #fff;
+}

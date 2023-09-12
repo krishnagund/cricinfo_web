@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players</title>
+    <link rel="stylesheet" href="index1.css">
+    <link rel="stylesheet" href="player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="ball.jpeg" alt="image not found" id="logo">
+        <ul class="navv">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="player.html">Players</a></li>
+           
+        </ul>
+    </nav>
+<br>
+<br>
+<br>
+<br>
+
+
+    
+    <main>
+      <section>
+        <pre class="TextBlack9" style="margin-left: 0%;"><b style="color: red
+        ;">Note:</b> Enter the player type like batter, bowler and all rounder.
+  After every search do reload the page or it won't work.</pre>
+        <input type="text" id="input1" placeholder="Enter type of player">
+        <button type="button" onclick="buildTable(myArray)">Load</button>
+        <button type="button" onclick="buildTableall(myArray)">view all</button>
+        <pre class="TextBlack9" id="output"></pre>
+    </section>
+        <section>
+            
+            <table>
+                <thead>
+                    <th>Player ID</th>
+                    <th class="name">Name</th>
+                    <th>Age</th>
+                    <th>Matches</th>
+                    <th>Bat innings</th>
+                    <th>Runs</th>
+                    <th>HS</th>
+                    <th>AVG</th>
+                    <th>Strike rate</th>
+                    <th>6's</th>
+                    <th>4's</th>
+                    <th>100's</th>
+                    <th>50's</th>
+                    <th>Batting Style</th>
+                    <th>Bowl innings</th>
+                    <th>wickets</th>
+                    <th>balls bowled</th>
+                    <th>runs given</th>
+                    <th>econ</th>
+                    <th>hattricks</th>
+                    <th>bowling srate</th>
+                    <th>bowl avg</th>
+                    
+                </thead>
+                <tbody id="data_output">
+                    <!-- Prodcuts from javascript file in here. -->
+                </tbody>
+            </table>
+           
+
+        </section>
+      </section>
+      <section class="footer">
+          <div class="credit">created by | <span>Krish Web Designer</span> | All rights are reserved</div>
+           <div class="icons">
+          
+              <a href="https://www.facebook.com/groups/?ref=bookmarks" class="fab fa-facebook-f"></a>
+              <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" class="fab fa-twitter"></a>
+              <a href="https://instagram.com/_krishna_gund?igshid=MzRlODBiNWFlZA==" class="fab fa-instagram"></a>
+              <a href="https://web.whatsapp.com/" class="fab fa-whatsapp"></a>
+              <a href="https://github.com/krishnagund" class="fab fa-github"></a>
+          </div>
+          </section>
+
+    </main>
+    <script>
+        
+        var myArray = [
+        {
+    "Player_id": 1,
+    "Name": "Rohit Sharma",
+    "age": 35,
+    "type": "batter",
+    "matches": 148,
+    "bat_innings": 140,
+    "runs": 3853,
+    "HS": 118,
+    "avg": 30.82,
+    "strike_rate": 139.25,
+    "six": 182,
+    "four": 348,
+    "hundreds": 4,
+    "fifty": 29,
+    "bat_style": "Right Handed",
+    "bowl_innings": 9,
+    "wickets": 1,
+    "Ball_bowled": 68,
+    "runs_given": 113,
+    "econ": 9.97,
+    "hattricks": 0,
+    "bowl_strate": 68,
+    "bowl_avg": 113
+  },
+  {
+    "Player_id": 2,
+    "Name": "Virat Kohli",
+    "age": 34,
+    "type": "batter",
+    "matches": 115,
+    "bat_innings": 107,
+    "runs": 4008,
+    "HS": 122,
+    "avg": 52.73,
+    "strike_rate": 137.96,
+    "six": 117,
+    "four": 356,
+    "hundreds": 1,
+    "fifty": 37,
+    "bat_style": "Right Handed",
+    "bowl_innings": 13,
+    "wickets": 4,
+    "Ball_bowled": 152,
+    "runs_given": 204,
+    "econ": 8.05,
+    "hattricks": 0,
+    "bowl_strate": 38,
+    "bowl_avg": 51
+  },
+  {
+    "Player_id": 3,
+    "Name": "MS Dhoni",
+    "age": 41,
+    "type": "batter",
+    "matches": 98,
+    "bat_innings": 85,
+    "runs": 1617,
+    "HS": 56,
+    "avg": 37.6,
+    "strike_rate": 126.13,
+    "six": 52,
+    "four": 116,
+    "hundreds": 0,
+    "fifty": 2,
+    "bat_style": "Right Handed",
+    "bowl_innings": "-",
+    "wickets": "-",
+    "Ball_bowled": "-",
+    "runs_given": "-",
+    "econ": "-",
+    "hattricks": "-",
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 4,
+    "Name": "Shikhar Dhawan",
+    "age": 37,
+    "type": "batter",
+    "matches": 68,
+    "bat_innings": 66,
+    "runs": 1759,
+    "HS": 92,
+    "avg": 27.92,
+    "strike_rate": 126.36,
+    "six": 50,
+    "four": 191,
+    "hundreds": 0,
+    "fifty": 11,
+    "bat_style": "Left handed",
+    "bowl_innings": "-",
+    "wickets": "-",
+    "Ball_bowled": "-",
+    "runs_given": "-",
+    "econ": "-",
+    "hattricks": "-",
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 5,
+    "Name": "KL Rahul",
+    "age": 30,
+    "type": "batter",
+    "matches": 72,
+    "bat_innings": 68,
+    "runs": 2265,
+    "HS": 110,
+    "avg": 37.75,
+    "strike_rate": 139.12,
+    "six": 99,
+    "four": 191,
+    "hundreds": 2,
+    "fifty": 22,
+    "bat_style": "Right Handed",
+    "bowl_innings": "-",
+    "wickets": "-",
+    "Ball_bowled": "-",
+    "runs_given": "-",
+    "econ": "-",
+    "hattricks": "-",
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 6,
+    "Name": "Suryakumar Yadav",
+    "age": 32,
+    "type": "batter",
+    "matches": 48,
+    "bat_innings": 46,
+    "runs": 1675,
+    "HS": 117,
+    "avg": 46.52,
+    "strike_rate": 175.76,
+    "six": 96,
+    "four": 150,
+    "hundreds": 3,
+    "fifty": 13,
+    "bat_style": "Right Handed",
+    "bowl_innings": "-",
+    "wickets": "-",
+    "Ball_bowled": "-",
+    "runs_given": "-",
+    "econ": "-",
+    "hattricks": "-",
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 7,
+    "Name": "Dinesh Karthik",
+    "age": 37,
+    "type": "batter",
+    "matches": 60,
+    "bat_innings": 48,
+    "runs": 686,
+    "HS": 55,
+    "avg": 26.38,
+    "strike_rate": 142.61,
+    "six": 28,
+    "four": 71,
+    "hundreds": 0,
+    "fifty": 1,
+    "bat_style": "Right Handed",
+    "bowl_innings": 1,
+    "wickets": 0,
+    "Ball_bowled": 6,
+    "runs_given": 18,
+    "econ": 18,
+    "hattricks": 0,
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 8,
+    "Name": "Suresh Raina",
+    "age": 36,
+    "type": "batter",
+    "matches": 78,
+    "bat_innings": 66,
+    "runs": 1605,
+    "HS": 101,
+    "avg": 29.18,
+    "strike_rate": 134.87,
+    "six": 58,
+    "four": 145,
+    "hundreds": 1,
+    "fifty": 5,
+    "bat_style": "Left handed",
+    "bowl_innings": 27,
+    "wickets": 13,
+    "Ball_bowled": 349,
+    "runs_given": 442,
+    "econ": 7.59,
+    "hattricks": 0,
+    "bowl_strate": 26.8,
+    "bowl_avg": 34
+  },
+  {
+    "Player_id": 9,
+    "Name": "Shreyas Iyer",
+    "age": 28,
+    "type": "batter",
+    "matches": 49,
+    "bat_innings": 45,
+    "runs": 1043,
+    "HS": 74,
+    "avg": 30.67,
+    "strike_rate": 135.98,
+    "six": 42,
+    "four": 85,
+    "hundreds": 0,
+    "fifty": 7,
+    "bat_style": "Right Handed",
+    "bowl_innings": 1,
+    "wickets": 0,
+    "Ball_bowled": 2,
+    "runs_given": 2,
+    "econ": 6,
+    "hattricks": 0,
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 10,
+    "Name": "Rishabh Pant",
+    "age": 25,
+    "type": "batter",
+    "matches": 66,
+    "bat_innings": 56,
+    "runs": 987,
+    "HS": 65,
+    "avg": 22.43,
+    "strike_rate": 126.37,
+    "six": 37,
+    "four": 86,
+    "hundreds": 0,
+    "fifty": 3,
+    "bat_style": "Left handed",
+    "bowl_innings": "-",
+    "wickets": "-",
+    "Ball_bowled": "-",
+    "runs_given": "-",
+    "econ": "-",
+    "hattricks": "-",
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 11,
+    "Name": "Virendra Sehwag",
+    "age": 44,
+    "type": "batter",
+    "matches": 19,
+    "bat_innings": 18,
+    "runs": 394,
+    "HS": 68,
+    "avg": 21.88,
+    "strike_rate": 145.38,
+    "six": 16,
+    "four": 43,
+    "hundreds": 0,
+    "fifty": 2,
+    "bat_style": "Right Handed",
+    "bowl_innings": 1,
+    "wickets": 0,
+    "Ball_bowled": 6,
+    "runs_given": 20,
+    "econ": 20,
+    "hattricks": 0,
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 12,
+    "Name": "Ajinkya Rahane",
+    "age": 34,
+    "type": "batter",
+    "matches": 20,
+    "bat_innings": 20,
+    "runs": 375,
+    "HS": 61,
+    "avg": 20.83,
+    "strike_rate": 113.29,
+    "six": 6,
+    "four": 32,
+    "hundreds": 0,
+    "fifty": 1,
+    "bat_style": "Right Handed",
+    "bowl_innings": "-",
+    "wickets": "-",
+    "Ball_bowled": "-",
+    "runs_given": "-",
+    "econ": "-",
+    "hattricks": "-",
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 13,
+    "Name": "Sanju Samson",
+    "age": 28,
+    "type": "batter",
+    "matches": 17,
+    "bat_innings": 16,
+    "runs": 301,
+    "HS": 77,
+    "avg": 20.06,
+    "strike_rate": 133.77,
+    "six": 13,
+    "four": 23,
+    "hundreds": 0,
+    "fifty": 1,
+    "bat_style": "Right Handed",
+    "bowl_innings": "-",
+    "wickets": "-",
+    "Ball_bowled": "-",
+    "runs_given": "-",
+    "econ": "-",
+    "hattricks": "-",
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 14,
+    "Name": "Gautam Gambhir",
+    "age": 41,
+    "type": "batter",
+    "matches": 37,
+    "bat_innings": 36,
+    "runs": 932,
+    "HS": 75,
+    "avg": 27.41,
+    "strike_rate": 119.02,
+    "six": 10,
+    "four": 109,
+    "hundreds": 0,
+    "fifty": 7,
+    "bat_style": "Left handed",
+    "bowl_innings": "-",
+    "wickets": "-",
+    "Ball_bowled": "-",
+    "runs_given": "-",
+    "econ": "-",
+    "hattricks": "-",
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 15,
+    "Name": "Manish Pandey",
+    "age": 33,
+    "type": "batter",
+    "matches": 39,
+    "bat_innings": 33,
+    "runs": 709,
+    "HS": 79,
+    "avg": 44.31,
+    "strike_rate": 126.15,
+    "six": 19,
+    "four": 49,
+    "hundreds": 0,
+    "fifty": 3,
+    "bat_style": "Right Handed",
+    "bowl_innings": "-",
+    "wickets": "-",
+    "Ball_bowled": "-",
+    "runs_given": "-",
+    "econ": "-",
+    "hattricks": "-",
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 16,
+    "Name": "Akshar Patel",
+    "age": 29,
+    "type": "all rounder",
+    "matches": 40,
+    "bat_innings": 25,
+    "runs": 288,
+    "HS": 65,
+    "avg": 22.15,
+    "strike_rate": 152.38,
+    "six": 13,
+    "four": 24,
+    "hundreds": 0,
+    "fifty": 1,
+    "bat_style": "Left handed",
+    "bowl_innings": 39,
+    "wickets": 37,
+    "Ball_bowled": 745,
+    "runs_given": 929,
+    "econ": 7.48,
+    "hattricks": 0,
+    "bowl_strate": 20.1,
+    "bowl_avg": 25.1
+  },
+  {
+    "Player_id": 17,
+    "Name": "Robin Uthappa",
+    "age": 37,
+    "type": "batter",
+    "matches": 13,
+    "bat_innings": 12,
+    "runs": 249,
+    "HS": 50,
+    "avg": 24.9,
+    "strike_rate": 118,
+    "six": 6,
+    "four": 26,
+    "hundreds": 0,
+    "fifty": 1,
+    "bat_style": "Right Handed",
+    "bowl_innings": "-",
+    "wickets": "-",
+    "Ball_bowled": "-",
+    "runs_given": "-",
+    "econ": "-",
+    "hattricks": "-",
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 18,
+    "Name": "Shubhaman Gill",
+    "age": 23,
+    "type": "batter",
+    "matches": 6,
+    "bat_innings": 6,
+    "runs": 202,
+    "HS": 126,
+    "avg": 40.4,
+    "strike_rate": 165.57,
+    "six": 10,
+    "four": 19,
+    "hundreds": 1,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": "-",
+    "wickets": "-",
+    "Ball_bowled": "-",
+    "runs_given": "-",
+    "econ": "-",
+    "hattricks": "-",
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 19,
+    "Name": "Ruturaj Gaikwad",
+    "age": 26,
+    "type": "batter",
+    "matches": 9,
+    "bat_innings": 8,
+    "runs": 135,
+    "HS": 57,
+    "avg": 16.87,
+    "strike_rate": 123.85,
+    "six": 5,
+    "four": 13,
+    "hundreds": 0,
+    "fifty": 1,
+    "bat_style": "Right Handed",
+    "bowl_innings": "-",
+    "wickets": "-",
+    "Ball_bowled": "-",
+    "runs_given": "-",
+    "econ": "-",
+    "hattricks": "-",
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 20,
+    "Name": "Kedar Jadhav",
+    "age": 38,
+    "type": "batter",
+    "matches": 9,
+    "bat_innings": 6,
+    "runs": 122,
+    "HS": 58,
+    "avg": 20.33,
+    "strike_rate": 123.23,
+    "six": 3,
+    "four": 12,
+    "hundreds": 0,
+    "fifty": 1,
+    "bat_style": "Right Handed",
+    "bowl_innings": "-",
+    "wickets": "-",
+    "Ball_bowled": "-",
+    "runs_given": "-",
+    "econ": "-",
+    "hattricks": "-",
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 21,
+    "Name": "Rahul Tripathi",
+    "age": 32,
+    "type": "batter",
+    "matches": 5,
+    "bat_innings": 5,
+    "runs": 97,
+    "HS": 44,
+    "avg": 19.4,
+    "strike_rate": 144.77,
+    "six": 5,
+    "four": 11,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": "-",
+    "wickets": "-",
+    "Ball_bowled": "-",
+    "runs_given": "-",
+    "econ": "-",
+    "hattricks": "-",
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 22,
+    "Name": "Ashish Nehra",
+    "age": 43,
+    "type": "bowler",
+    "matches": 27,
+    "bat_innings": 5,
+    "runs": 28,
+    "HS": 22,
+    "avg": 5.6,
+    "strike_rate": 71.79,
+    "six": 2,
+    "four": 1,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 27,
+    "wickets": 34,
+    "Ball_bowled": 588,
+    "runs_given": 758,
+    "econ": 7.73,
+    "hattricks": 0,
+    "bowl_strate": 17.2,
+    "bowl_avg": 22.29
+  },
+  {
+    "Player_id": 23,
+    "Name": "Jasprit Bumrah",
+    "age": 29,
+    "type": "bowler",
+    "matches": 60,
+    "bat_innings": 7,
+    "runs": 8,
+    "HS": 7,
+    "avg": 4,
+    "strike_rate": 61.53,
+    "six": 0,
+    "four": 1,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 59,
+    "wickets": 70,
+    "Ball_bowled": 1283,
+    "runs_given": 1416,
+    "econ": 6.62,
+    "hattricks": 0,
+    "bowl_strate": 18.3,
+    "bowl_avg": 20.22
+  },
+  {
+    "Player_id": 24,
+    "Name": "Mohammed Shami",
+    "age": 32,
+    "type": "bowler",
+    "matches": 23,
+    "bat_innings": 3,
+    "runs": 0,
+    "HS": 0,
+    "avg": 0,
+    "strike_rate": 0,
+    "six": 0,
+    "four": 0,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 23,
+    "wickets": 24,
+    "Ball_bowled": 477,
+    "runs_given": 711,
+    "econ": 8.94,
+    "hattricks": 0,
+    "bowl_strate": 19.8,
+    "bowl_avg": 8.94
+  },
+  {
+    "Player_id": 25,
+    "Name": "Bhuvneshwar Kumar",
+    "age": 33,
+    "type": "bowler",
+    "matches": 87,
+    "bat_innings": 21,
+    "runs": 67,
+    "HS": 16,
+    "avg": 8.37,
+    "strike_rate": 71.27,
+    "six": 0,
+    "four": 0,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 86,
+    "wickets": 90,
+    "Ball_bowled": 1791,
+    "runs_given": 2079,
+    "econ": 6.96,
+    "hattricks": 0,
+    "bowl_strate": 19.9,
+    "bowl_avg": 23.1
+  },
+  {
+    "Player_id": 26,
+    "Name": "Amit Mishra",
+    "age": 40,
+    "type": "bowler",
+    "matches": 10,
+    "bat_innings": 1,
+    "runs": 0,
+    "HS": 0,
+    "avg": 0,
+    "strike_rate": 0,
+    "six": 0,
+    "four": 0,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 10,
+    "wickets": 16,
+    "Ball_bowled": 228,
+    "runs_given": 240,
+    "econ": 6.31,
+    "hattricks": 0,
+    "bowl_strate": 14.2,
+    "bowl_avg": 15
+  },
+  {
+    "Player_id": 27,
+    "Name": "Vinay Kumar",
+    "age": 39,
+    "type": "bowler",
+    "matches": 9,
+    "bat_innings": 1,
+    "runs": 2,
+    "HS": 2,
+    "avg": "-",
+    "strike_rate": 50,
+    "six": 0,
+    "four": 0,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 9,
+    "wickets": 10,
+    "Ball_bowled": 189,
+    "runs_given": 247,
+    "econ": 7.84,
+    "hattricks": 0,
+    "bowl_strate": 18.9,
+    "bowl_avg": 24.7
+  },
+  {
+    "Player_id": 28,
+    "Name": "Pragyan Ojha",
+    "age": 36,
+    "type": "bowler",
+    "matches": 6,
+    "bat_innings": 1,
+    "runs": 10,
+    "HS": 10,
+    "avg": "-",
+    "strike_rate": 166.66,
+    "six": 1,
+    "four": 0,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Left handed",
+    "bowl_innings": 6,
+    "wickets": 10,
+    "Ball_bowled": 126,
+    "runs_given": 132,
+    "econ": 6.28,
+    "hattricks": 0,
+    "bowl_strate": 12.6,
+    "bowl_avg": 13.2
+  },
+  {
+    "Player_id": 29,
+    "Name": "Ishant Sharma",
+    "age": 34,
+    "type": "bowler",
+    "matches": 14,
+    "bat_innings": 3,
+    "runs": 8,
+    "HS": 5,
+    "avg": 8,
+    "strike_rate": 88.88,
+    "six": 0,
+    "four": 6,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 14,
+    "wickets": 8,
+    "Ball_bowled": 278,
+    "runs_given": 400,
+    "econ": 8.63,
+    "hattricks": 0,
+    "bowl_strate": 34.7,
+    "bowl_avg": 50
+  },
+  {
+    "Player_id": 30,
+    "Name": "Praveen Kumar",
+    "age": 36,
+    "type": "bowler",
+    "matches": 10,
+    "bat_innings": 3,
+    "runs": 7,
+    "HS": 6,
+    "avg": 2.33,
+    "strike_rate": 43.75,
+    "six": 0,
+    "four": 0,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 10,
+    "wickets": 8,
+    "Ball_bowled": 156,
+    "runs_given": 193,
+    "econ": 7.42,
+    "hattricks": 0,
+    "bowl_strate": 19.5,
+    "bowl_avg": 24.12
+  },
+  {
+    "Player_id": 31,
+    "Name": "S Sreesanth",
+    "age": 40,
+    "type": "bowler",
+    "matches": 10,
+    "bat_innings": 3,
+    "runs": 20,
+    "HS": 19,
+    "avg": 20,
+    "strike_rate": 142.85,
+    "six": 0,
+    "four": 2,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 9,
+    "wickets": 7,
+    "Ball_bowled": 204,
+    "runs_given": 288,
+    "econ": 8.47,
+    "hattricks": 0,
+    "bowl_strate": 29.1,
+    "bowl_avg": 8.47
+  },
+  {
+    "Player_id": 32,
+    "Name": "Ajit Agarkar",
+    "age": 45,
+    "type": "bowler",
+    "matches": 4,
+    "bat_innings": 2,
+    "runs": 15,
+    "HS": 14,
+    "avg": 7.5,
+    "strike_rate": 136.36,
+    "six": 0,
+    "four": 2,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 3,
+    "wickets": 3,
+    "Ball_bowled": 63,
+    "runs_given": 85,
+    "econ": 8.09,
+    "hattricks": 0,
+    "bowl_strate": 21,
+    "bowl_avg": 28.33
+  },
+  {
+    "Player_id": 33,
+    "Name": "Harbhajan Singh",
+    "age": 42,
+    "type": "bowler",
+    "matches": 28,
+    "bat_innings": 13,
+    "runs": 108,
+    "HS": 21,
+    "avg": 13.5,
+    "strike_rate": 124.13,
+    "six": 4,
+    "four": 11,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 27,
+    "wickets": 25,
+    "Ball_bowled": 612,
+    "runs_given": 633,
+    "econ": 6.2,
+    "hattricks": 0,
+    "bowl_strate": 24.4,
+    "bowl_avg": 25.32
+  },
+  {
+    "Player_id": 34,
+    "Name": "Zaheer Khan",
+    "age": 44,
+    "type": "bowler",
+    "matches": 17,
+    "bat_innings": 4,
+    "runs": 13,
+    "HS": 9,
+    "avg": 6.5,
+    "strike_rate": 130,
+    "six": 1,
+    "four": 0,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 17,
+    "wickets": 17,
+    "Ball_bowled": 352,
+    "runs_given": 448,
+    "econ": 7.63,
+    "hattricks": 0,
+    "bowl_strate": 20.7,
+    "bowl_avg": 26.35
+  },
+  {
+    "Player_id": 35,
+    "Name": "Chetan Sakariya",
+    "age": 25,
+    "type": "bowler",
+    "matches": 2,
+    "bat_innings": 1,
+    "runs": 5,
+    "HS": 5,
+    "avg": "-",
+    "strike_rate": 55.55,
+    "six": 0,
+    "four": 0,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Left handed",
+    "bowl_innings": 1,
+    "wickets": 1,
+    "Ball_bowled": 22,
+    "runs_given": 34,
+    "econ": 9.27,
+    "hattricks": 0,
+    "bowl_strate": 22,
+    "bowl_avg": 34
+  },
+  {
+    "Player_id": 36,
+    "Name": "Deepak Hooda",
+    "age": 27,
+    "type": "all rounder",
+    "matches": 21,
+    "bat_innings": 17,
+    "runs": 368,
+    "HS": 104,
+    "avg": 30.66,
+    "strike_rate": 147.2,
+    "six": 18,
+    "four": 29,
+    "hundreds": 1,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 8,
+    "wickets": 6,
+    "Ball_bowled": 95,
+    "runs_given": 76,
+    "econ": 4.8,
+    "hattricks": 0,
+    "bowl_strate": 15.8,
+    "bowl_avg": 12.66
+  },
+  {
+    "Player_id": 37,
+    "Name": "Varun Chakravarthy",
+    "age": 31,
+    "type": "bowler",
+    "matches": 6,
+    "bat_innings": 1,
+    "runs": 0,
+    "HS": 0,
+    "avg": 0,
+    "strike_rate": 0,
+    "six": 0,
+    "four": 0,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 6,
+    "wickets": 2,
+    "Ball_bowled": 135,
+    "runs_given": 132,
+    "econ": 5.86,
+    "hattricks": 0,
+    "bowl_strate": 67.5,
+    "bowl_avg": 66
+  },
+  {
+    "Player_id": 38,
+    "Name": "Lakshmipathy Balaji",
+    "age": 41,
+    "type": "bowler",
+    "matches": 5,
+    "bat_innings": "-",
+    "runs": "-",
+    "HS": "-",
+    "avg": "-",
+    "strike_rate": "-",
+    "six": "-",
+    "four": "-",
+    "hundreds": "-",
+    "fifty": "-",
+    "bat_style": "Right Handed",
+    "bowl_innings": 5,
+    "wickets": 10,
+    "Ball_bowled": 96,
+    "runs_given": 121,
+    "econ": 7.56,
+    "hattricks": 0,
+    "bowl_strate": 9.6,
+    "bowl_avg": 12.1
+  },
+  {
+    "Player_id": 39,
+    "Name": "Ishan Kishan",
+    "age": 24,
+    "type": "batter",
+    "matches": 27,
+    "bat_innings": 27,
+    "runs": 653,
+    "HS": 89,
+    "avg": 42.5,
+    "strike_rate": 122.74,
+    "six": 25,
+    "four": 71,
+    "hundreds": 0,
+    "fifty": 4,
+    "bat_style": "Left handed",
+    "bowl_innings": "-",
+    "wickets": "-",
+    "Ball_bowled": "-",
+    "runs_given": "-",
+    "econ": "-",
+    "hattricks": "-",
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 40,
+    "Name": "Murali Kartik",
+    "age": 46,
+    "type": "bowler",
+    "matches": 1,
+    "bat_innings": "-",
+    "runs": "-",
+    "HS": "-",
+    "avg": "-",
+    "strike_rate": "-",
+    "six": "-",
+    "four": "-",
+    "hundreds": "-",
+    "fifty": "-",
+    "bat_style": "Left handed",
+    "bowl_innings": 1,
+    "wickets": 0,
+    "Ball_bowled": 24,
+    "runs_given": 27,
+    "econ": 6.75,
+    "hattricks": 0,
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 41,
+    "Name": "Harshal Patel",
+    "age": 32,
+    "type": "bowler",
+    "matches": 25,
+    "bat_innings": 10,
+    "runs": 77,
+    "HS": 18,
+    "avg": 12.83,
+    "strike_rate": 135.08,
+    "six": 3,
+    "four": 9,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 24,
+    "wickets": 29,
+    "Ball_bowled": 503,
+    "runs_given": 770,
+    "econ": 9.18,
+    "hattricks": 0,
+    "bowl_strate": 17.3,
+    "bowl_avg": 26.55
+  },
+  {
+    "Player_id": 42,
+    "Name": "Sandeep Warrier",
+    "age": 32,
+    "type": "bowler",
+    "matches": 1,
+    "bat_innings": "-",
+    "runs": "-",
+    "HS": "-",
+    "avg": "-",
+    "strike_rate": "-",
+    "six": "-",
+    "four": "-",
+    "hundreds": "-",
+    "fifty": "-",
+    "bat_style": "Right Handed",
+    "bowl_innings": 1,
+    "wickets": 0,
+    "Ball_bowled": 18,
+    "runs_given": 23,
+    "econ": 7.66,
+    "hattricks": 0,
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 43,
+    "Name": "Mayank Markande",
+    "age": 25,
+    "type": "bowler",
+    "matches": 1,
+    "bat_innings": "-",
+    "runs": "-",
+    "HS": "-",
+    "avg": "-",
+    "strike_rate": "-",
+    "six": "-",
+    "four": "-",
+    "hundreds": "-",
+    "fifty": "-",
+    "bat_style": "Right Handed",
+    "bowl_innings": 1,
+    "wickets": 0,
+    "Ball_bowled": 24,
+    "runs_given": 31,
+    "econ": 7.75,
+    "hattricks": 0,
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 44,
+    "Name": "Khaleel Ahmed",
+    "age": 25,
+    "type": "bowler",
+    "matches": 14,
+    "bat_innings": 1,
+    "runs": 1,
+    "HS": 1,
+    "avg": "-",
+    "strike_rate": 100,
+    "six": 0,
+    "four": 0,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 14,
+    "wickets": 13,
+    "Ball_bowled": 312,
+    "runs_given": 459,
+    "econ": 8.82,
+    "hattricks": 0,
+    "bowl_strate": 24,
+    "bowl_avg": 35.3
+  },
+  {
+    "Player_id": 45,
+    "Name": "Devdutt Padikal",
+    "age": 22,
+    "type": "batter",
+    "matches": 2,
+    "bat_innings": 2,
+    "runs": 38,
+    "HS": 29,
+    "avg": 19,
+    "strike_rate": 100,
+    "six": 1,
+    "four": 2,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Left handed",
+    "bowl_innings": "-",
+    "wickets": "-",
+    "Ball_bowled": "-",
+    "runs_given": "-",
+    "econ": "-",
+    "hattricks": "-",
+    "bowl_strate": "-",
+    "bowl_avg": "-"
+  },
+  {
+    "Player_id": 46,
+    "Name": "T Natarajan",
+    "age": 32,
+    "type": "bowler",
+    "matches": 4,
+    "bat_innings": "-",
+    "runs": "-",
+    "HS": "-",
+    "avg": "-",
+    "strike_rate": "-",
+    "six": "-",
+    "four": "-",
+    "hundreds": "-",
+    "fifty": "-",
+    "bat_style": "Left handed",
+    "bowl_innings": 4,
+    "wickets": 7,
+    "Ball_bowled": 96,
+    "runs_given": 122,
+    "econ": 7.62,
+    "hattricks": 0,
+    "bowl_strate": 13.7,
+    "bowl_avg": 17.42
+  },
+  {
+    "Player_id": 47,
+    "Name": "Hardik Pandya",
+    "age": 29,
+    "type": "all rounder",
+    "matches": 87,
+    "bat_innings": 67,
+    "runs": 1271,
+    "HS": 71,
+    "avg": 25.42,
+    "strike_rate": 142.17,
+    "six": 65,
+    "four": 92,
+    "hundreds": 0,
+    "fifty": 9,
+    "bat_style": "Right Handed",
+    "bowl_innings": 76,
+    "wickets": 69,
+    "Ball_bowled": 1343,
+    "runs_given": 1824,
+    "econ": 8.14,
+    "hattricks": 0,
+    "bowl_strate": 19.4,
+    "bowl_avg": 26.43
+  },
+  {
+    "Player_id": 48,
+    "Name": "Krunal Pandya",
+    "age": 32,
+    "type": "all rounder",
+    "matches": 19,
+    "bat_innings": 10,
+    "runs": 124,
+    "HS": 26,
+    "avg": 24.8,
+    "strike_rate": 101.56,
+    "six": 2,
+    "four": 11,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Left handed",
+    "bowl_innings": 19,
+    "wickets": 15,
+    "Ball_bowled": 410,
+    "runs_given": 554,
+    "econ": 8.1,
+    "hattricks": 0,
+    "bowl_strate": 27.3,
+    "bowl_avg": 36.93
+  },
+  {
+    "Player_id": 49,
+    "Name": "Stuart Binny",
+    "age": 38,
+    "type": "all rounder",
+    "matches": 3,
+    "bat_innings": 2,
+    "runs": 35,
+    "HS": 24,
+    "avg": 17.5,
+    "strike_rate": 120.68,
+    "six": 1,
+    "four": 2,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 3,
+    "wickets": 1,
+    "Ball_bowled": 30,
+    "runs_given": 54,
+    "econ": 10.8,
+    "hattricks": 0,
+    "bowl_strate": 30,
+    "bowl_avg": 54
+  },
+  {
+    "Player_id": 50,
+    "Name": "Umesh Yadav",
+    "age": 35,
+    "type": "bowler",
+    "matches": 9,
+    "bat_innings": 2,
+    "runs": 22,
+    "HS": 20,
+    "avg": 22,
+    "strike_rate": 104.76,
+    "six": 0,
+    "four": 2,
+    "hundreds": 0,
+    "fifty": 0,
+    "bat_style": "Right Handed",
+    "bowl_innings": 9,
+    "wickets": 12,
+    "Ball_bowled": 180,
+    "runs_given": 280,
+    "econ": 9.33,
+    "hattricks": 0,
+    "bowl_strate": 15,
+    "bowl_avg": 23.33
+  }
+
+]
+	
+	
+    
+  
+    
+        function buildTable(data){
+          var flag=0;
+          if(flag>0)
+          {
+            window.location.reload()
+          }
+          var search = document.getElementById("input1").value;
+            var table = document.getElementById('data_output')
+    
+            for (var i = 0; i < data.length; i++){
+              if (data[i].type==search){
+                flag++
+                var row = `<tr>
+                    <td>${data[i].Player_id}</td>
+                <td class="Name">${data[i].Name}</td>
+                <td>${data[i].age}</td>
+                <td>${data[i].matches}</td>
+                <td>${data[i].bat_innings}</td>
+                <td>${data[i].runs}</td>
+                <td>${data[i].HS}</td>
+                <td>${data[i].avg}</td>
+                <td>${data[i].strike_rate}</td>
+                <td>${data[i].six}</td>
+                <td>${data[i].four}</td>
+                <td>${data[i].hundreds}</td>
+                <td>${data[i].fifty}</td>
+                <td>${data[i].bat_style}</td>
+                <td>${data[i].bowl_innings}</td>
+                <td>${data[i].wickets}</td>
+                <td>${data[i].Ball_bowled}</td>
+                <td>${data[i].runs_given}</td>
+                <td>${data[i].econ}</td>
+                <td>${data[i].hattricks}</td>
+                <td>${data[i].bowl_strate}</td>
+                <td>${data[i].bowl_avg}</td>
+                
+                          </tr>`
+                          table.innerHTML += row
+
+                        }      
+            }
+            var count = document.getElementById("output")
+            var cc = `Total number of players of ${search} type is ${flag}`
+            count.innerHTML=cc
+            
+        }
+        function buildTableall(data){
+          var flag=0;
+         
+          
+          var search = document.getElementById("input1").value;
+            var table = document.getElementById('data_output')
+    
+            for (var i = 0; i < data.length; i++){
+              
+                flag++
+                var row = `<tr>
+                    <td>${data[i].Player_id}</td>
+                <td class="Name">${data[i].Name}</td>
+                <td>${data[i].age}</td>
+                <td>${data[i].matches}</td>
+                <td>${data[i].bat_innings}</td>
+                <td>${data[i].runs}</td>
+                <td>${data[i].HS}</td>
+                <td>${data[i].avg}</td>
+                <td>${data[i].strike_rate}</td>
+                <td>${data[i].six}</td>
+                <td>${data[i].four}</td>
+                <td>${data[i].hundreds}</td>
+                <td>${data[i].fifty}</td>
+                <td>${data[i].bat_style}</td>
+                <td>${data[i].bowl_innings}</td>
+                <td>${data[i].wickets}</td>
+                <td>${data[i].Ball_bowled}</td>
+                <td>${data[i].runs_given}</td>
+                <td>${data[i].econ}</td>
+                <td>${data[i].hattricks}</td>
+                <td>${data[i].bowl_strate}</td>
+                <td>${data[i].bowl_avg}</td>
+                
+                          </tr>`
+                          table.innerHTML += row
+
+                          
+            }
+            var count = document.getElementById("output")
+            var cc = `Total number of players is ${flag}`
+            count.innerHTML=cc
+            
+            
+        }
+
+        
+    
+    </script>
+</body>
+
+</html>

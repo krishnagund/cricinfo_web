@@ -1,0 +1,51 @@
+Player_id,Name,age,type,matches,bat_innings,runs,HS,avg,strike_rate,six,four,hundreds,fifty,bat_style,bowl_innings,wickets,Ball_bowled,runs_given,econ,hattricks,bowl_strate,bowl_avg
+1,Rohit Sharma,35,batter,148,140,3853,118,30.82,139.25,182,348,4,29,Right Handed,9,1,68,113,9.97,0,68,113
+2,Virat Kohli,34,batter,115,107,4008,122,52.73,137.96,117,356,1,37,Right Handed,13,4,152,204,8.05,0,38,51
+3,MS Dhoni,41,batter,98,85,1617,56,37.6,126.13,52,116,0,2,Right Handed,-,-,-,-,-,-,-,-
+4,Shikhar Dhawan,37,batter,68,66,1759,92,27.92,126.36,50,191,0,11,Left handed,-,-,-,-,-,-,-,-
+5,KL Rahul,30,batter,72,68,2265,110,37.75,139.12,99,191,2,22,Right Handed,-,-,-,-,-,-,-,-
+6,Suryakumar Yadav,32,batter,48,46,1675,117,46.52,175.76,96,150,3,13,Right Handed,-,-,-,-,-,-,-,-
+7,Dinesh Karthik,37,Batter,60,48,686,55,26.38,142.61,28,71,0,1,Right Handed,1,0,6,18,18,0,-,-
+8,Suresh Raina,36,batter,78,66,1605,101,29.18,134.87,58,145,1,5,Left handed,27,13,349,442,7.59,0,26.8,34
+9,Shreyas Iyer,28,batter,49,45,1043,74,30.67,135.98,42,85,0,7,Right Handed,1,0,2,2,6,0,-,-
+10,Rishabh Pant,25,batter,66,56,987,65,22.43,126.37,37,86,0,3,Left handed,-,-,-,-,-,-,-,-
+11,Virendra Sehwag,44,batter,19,18,394,68,21.88,145.38,16,43,0,2,Right Handed,1,0,6,20,20,0,-,-
+12,Ajinkya Rahane,34,batter,20,20,375,61,20.83,113.29,6,32,0,1,Right Handed,-,-,-,-,-,-,-,-
+13,Sanju Samson,28,batter,17,16,301,77,20.06,133.77,13,23,0,1,Right Handed,-,-,-,-,-,-,-,-
+14,Gautam Gambhir,41,batter,37,36,932,75,27.41,119.02,10,109,0,7,Left handed,-,-,-,-,-,-,-,-
+15,Manish Pandey,33,batter,39,33,709,79,44.31,126.15,19,49,0,3,Right Handed,-,-,-,-,-,-,-,-
+16,Akshar Patel,29,all rounder,40,25,288,65,22.15,152.38,13,24,0,1,Left handed,39,37,745,929,7.48,0,20.1,25.1
+17,Robin Uthappa,37,batter,13,12,249,50,24.9,118,6,26,0,1,Right Handed,-,-,-,-,-,-,-,-
+18,Shubhaman Gill,23,batter,6,6,202,126,40.4,165.57,10,19,1,0,Right Handed,-,-,-,-,-,-,-,-
+19,Ruturaj Gaikwad,26,batter,9,8,135,57,16.87,123.85,5,13,0,1,Right Handed,-,-,-,-,-,-,-,-
+20,Kedar Jadhav,38,batter,9,6,122,58,20.33,123.23,3,12,0,1,Right Handed,-,-,-,-,-,-,-,-
+21,Rahul Tripathi,32,batter,5,5,97,44,19.4,144.77,5,11,0,0,Right Handed,-,-,-,-,-,-,-,-
+22,Ashish Nehra,43,bowler,27,5,28,22,5.6,71.79,2,1,0,0,Right Handed,27,34,588,758,7.73,0,17.2,22.29
+23,Jasprit Bumrah,29,bowler,60,7,8,7,4,61.53,0,1,0,0,Right Handed,59,70,1283,1416,6.62,0,18.3,20.22
+24,Mohammed Shami,32,bowler,23,3,0,0,0,0,0,0,0,0,Right Handed,23,24,477,711,8.94,0,19.8,8.94
+25,Bhuvneshwar Kumar,33,bowler,87,21,67,16,8.37,71.27,0,0,0,0,Right Handed,86,90,1791,2079,6.96,0,19.9,23.1
+26,Amit Mishra,40,bowler,10,1,0,0,0,0,0,0,0,0,Right Handed,10,16,228,240,6.31,0,14.2,15
+27,Vinay Kumar,39,bowler,9,1,2,2,-,50,0,0,0,0,Right Handed,9,10,189,247,7.84,0,18.9,24.7
+28,Pragyan Ojha,36,bowler,6,1,10,10,-,166.66,1,0,0,0,Left handed,6,10,126,132,6.28,0,12.6,13.2
+29,Ishant Sharma,34,bowler,14,3,8,5,8,88.88,0,6,0,0,Right Handed,14,8,278,400,8.63,0,34.7,50
+30,Praveen Kumar,36,bowler,10,3,7,6,2.33,43.75,0,0,0,0,Right Handed,10,8,156,193,7.42,0,19.5,24.12
+31,S Sreesanth,40,bowler,10,3,20,19,20,142.85,0,2,0,0,Right Handed,9,7,204,288,8.47,0,29.1,8.47
+32,Ajit Agarkar,45,bowler,4,2,15,14,7.5,136.36,0,2,0,0,Right Handed,3,3,63,85,8.09,0,21,28.33
+33,Harbhajan Singh,42,bowler,28,13,108,21,13.5,124.13,4,11,0,0,Right Handed,27,25,612,633,6.2,0,24.4,25.32
+34,Zaheer Khan,44,bowler,17,4,13,9,6.5,130,1,0,0,0,Right Handed,17,17,352,448,7.63,0,20.7,26.35
+35,Chetan Sakariya,25,bowler,2,1,5,5,-,55.55,0,0,0,0,Left handed,1,1,22,34,9.27,0,22,34
+36,Deepak Hooda,27,all rounder,21,17,368,104,30.66,147.2,18,29,1,0,Right Handed,8,6,95,76,4.8,0,15.8,12.66
+37,Varun Chakravarthy,31,bowler,6,1,0,0,0,0,0,0,0,0,Right Handed,6,2,135,132,5.86,0,67.5,66
+38,Lakshmipathy Balaji,41,bowler,5,-,-,-,-,-,-,-,-,-,Right Handed,5,10,96,121,7.56,0,9.6,12.1
+39,Ishan Kishan,24,batter,27,27,653,89,42.5,122.74,25,71,0,4,Left handed,-,-,-,-,-,-,-,-
+40,Murali Kartik,46,bowler,1,-,-,-,-,-,-,-,-,-,Left handed,1,0,24,27,6.75,0,-,-
+41,Harshal Patel,32,bowler,25,10,77,18,12.83,135.08,3,9,0,0,Right Handed,24,29,503,770,9.18,0,17.3,26.55
+42,Sandeep Warrier,32,bowler,1,-,-,-,-,-,-,-,-,-,Right Handed,1,0,18,23,7.66,0,-,-
+43,Mayank Markande,25,bowler,1,-,-,-,-,-,-,-,-,-,Right Handed,1,0,24,31,7.75,0,-,-
+44,Khaleel Ahmed,25,bowler,14,1,1,1,-,100,0,0,0,0,Right Handed,14,13,312,459,8.82,0,24,35.3
+45,Devdutt Padikal,22,batter,2,2,38,29,19,100,1,2,0,0,Left handed,-,-,-,-,-,-,-,-
+46,T Natarajan,32,bowler,4,-,-,-,-,-,-,-,-,-,Left handed,4,7,96,122,7.62,0,13.7,17.42
+47,Hardik Pandya,29,all rounder,87,67,1271,71,25.42,142.17,65,92,0,9,Right Handed,76,69,1343,1824,8.14,0,19.4,26.43
+48,Krunal Pandya,32,all rounder,19,10,124,26,24.8,101.56,2,11,0,0,Left handed,19,15,410,554,8.1,0,27.3,36.93
+49,Stuart Binny,38,all rounder,3,2,35,24,17.5,120.68,1,2,0,0,Right Handed,3,1,30,54,10.8,0,30,54
+50,Umesh Yadav,35,bowler,9,2,22,20,22,104.76,0,2,0,0,Right Handed,9,12,180,280,9.33,0,15,23.33
